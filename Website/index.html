@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCon 2023</title>
+    <!-- linking css and files -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <!-- favicon image for the tab -- used https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel = "icon" type = "favicon" href="Images/fav.png">
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <!-- navigation to and from each page -->
+            <h1>TechCon 2023</h1>
+            <!-- using changePage function to change each HTML page without it refreshing the page each time -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" onclick="changePage('home')">Home</a></li>
+                    <li><a href="schedule.html" onclick="changePage('schedule')">Schedule</a></li>
+                    <li><a href ="speakers.html" onclick="changePage('speakers')">Speakers</a></li>
+                    <li><a href ="contact.html" onclick="changePage('contact')">Contact</a></li>                    
+                    <li><a href ="register.html" onclick="changePage('register')">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- giving id to each section -->
+    <section id="about">
+        <div class="container">
+            <h2>About the Event</h2>
+            <!-- column class used to get image and text side by side -->
+            <div class = "column">
+                <!-- image of Fielding Johnson building -->
+                <img src="Images/fjb.jpg"> <!-- image reference https://www.esa.int/ESA_Multimedia/Images/2018/11/A_view_of_the_central_University_administrative_building_on_the_main_campus -->
+                <!-- text next to the image of FJ building -->
+                <p>
+                    Dive into the future of technology at our groundbreaking TechCon 2023!  
+                    <br><br>Join us for an exhilarating exploration of the latest innovations and trends shaping the digital landscape.
+                    <br><br>At our one and only <a href="https://maps.app.goo.gl/Te6yziG7Jjs4RRJm8" target ="_blank">Fielding Johnson Building</a> <!--adding google maps link to find exact location-->
+                    <br><br>From 4.12.2023 - 7.12.2023 
+                </p>
+            </div>
+            <!-- event overview using ordered/numbered list -->
+            <h3>The event includes:</h3>
+            <ol>
+                <li>Engaging Keynotes</li>
+                <li>Hands-on Workshops & Tutorials</li>
+                <li>Dynamic Networking Sessions</li>
+                <li>Competitive Hackathons</li>
+                <li>Techincal Tech Talks</li>
+                <li>Virtual Reality/Augmented Reality Experiences</li>
+                <li>And Much More...</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- register section -->
+    <section id="register">
+        <div class="container">
+            <h2>Register Now</h2>
+            <!-- registration text to encourage registration on home page -->
+            <p>
+                Ready to unlock a world of possibilities? 
+                <br><br>Seize the opportunity to elevate your tech journey by registering for our TechCon 2023!
+                <br><br>Don't miss out on the chance to expand your skill set, connect with like-minded professionals, and position yourself for success in the fast-paced world of tech. 
+                <br><br>Spaces are limited, so act now and register to guarantee your place at the epicenter of innovation. Your next big breakthrough awaits—register today and embark on a transformative tech adventure!
+            </p>
+            <!-- button to go straight to register page -- used https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+            <button style = "font-size: 30px;" onclick="window.location.href = 'register.html';">Register Now!!</button>
+        </div>
+    </section>
+
+    <!-- footer used to match header with footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; TechCon 2023. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,303 @@
+body {
+    /* setting font */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* margin */
+    margin: 0;
+    /* box size to ensure consistency */
+    box-sizing: border-box;
+    /* full veiw height used */
+    min-height: 100vh;
+    /* flex content vertically  */
+    display: flex;
+    flex-direction: column;
+    /* bigger font */
+    font-size: larger;
+}
+
+header {
+    /* background image */
+    background: url(Images/header.jpg);
+    /* covering the page*/
+    background-size: 100%;
+    background-position: 100%;
+    /* text colour and positioning */
+    color: #fff;
+    text-align: center;
+    /* space around elements for readability */
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+h1{
+    /* 0 margin for lower space usage above for titles */
+    margin: 0;
+    /* centered text */
+    text-align: center;
+}
+
+.container {
+    /* using the full width */
+    max-width: 100%;
+    /* space around elements for readability */
+    margin: 0 auto;
+    padding: 0.5%;
+}
+
+/* just for the navigation bar on top to jump to pages */
+nav ul {
+    /* not having bullet points */
+    list-style: none;
+    /* space around each element */
+    padding: 1%;
+}
+
+nav li {
+    /* making each element appear next to each other -- in a line */
+    display: inline;
+    /* space between each element */
+    margin-left: 5%;
+}
+
+nav a {
+    /* no text decoration to remove underline */
+    text-decoration: none;
+    /* white text colour */
+    color: #fff;
+    /* bold font */
+    font-weight: bold;
+}
+
+nav :hover{
+    /* on hover over each element, text colour turns from white to cyan */
+    color: cyan;
+}
+
+li {
+    /* having space below each line of the list */
+    margin-bottom: 2%;
+}
+
+/* used to get image and text side by side -- used https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+.column{
+    /* making a grid to fit only on half the page rather than full */
+    display: grid;
+    /* centered items for better look visually */
+    align-items: center;
+    /* 50% width for image, 50% width for text */
+    grid-template-columns: 50% 50%;
+    /* space between image and text */
+    column-gap: 0.5%;
+}
+
+p, address{
+    /* spacing between elements */
+    padding: 1%;
+    /* centered text */
+    text-align: center;
+}
+
+/* image used next to text */
+#about img, #contacts img{
+    /* full width of the allowed grid */
+    width: 100%;
+    /* full height of the allowed grid */
+    height: 100%;
+}
+
+#speakers img{
+    /* making a transition for hover over image of speakers */
+    transition: transform 0.3s ease;
+}
+
+#speakers img:hover {
+    /* changes the size of the image and increases it over hover */
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
+}
+
+ol{
+    /* centered text for readability */
+    text-align: center;
+    /* making the numbers stay inside the box of the list elements */
+    list-style-position: inside;
+    /* space for visibility */
+    padding: 1%;
+}
+
+/* only affects the button within the register id */
+#register button{
+    /* auto margin for space */
+    margin: auto;
+    /* starts on a new line and takes up the whole width */
+    display: block;
+
+}
+
+.speaker, label, h3, section, h2 {
+    /* centered text for better view */
+    text-align: center;
+}
+.speaker img {
+    /* curving the borders */
+    border-radius: 30%;
+    /* width of image */
+    width: 250px;
+    /* height of image */
+    height: 250px;
+    /* clips the image to fit the given dimensions */
+    object-fit: cover;
+}
+
+footer {
+    /* footer image to match with header */
+    background: url(Images/header.jpg);
+    /* covers the page */
+    background-size: 100%;
+    background-position: 100%;
+    /* text colour and alignment */
+    color: #fff;
+    text-align: center;
+    /* top margin to be auto selected depending on content above it */
+    margin-top: auto;
+}
+
+#formcontainer {
+    /* minimum 40% width for maximum view */
+    min-width: 40%;
+    /* auto margin for space usage */
+    margin: auto;
+    /* white background for consistency */
+    background-color: white;
+    /* 3% padding space */
+    padding: 3%;
+    /* curved borders */
+    border-radius: 5%;
+    /* having a black shadow around the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    /* flex content vertically rather than horizontally */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    /* space between each title for form */
+    margin-bottom: 5%;
+}
+
+label {
+    /* bold font */
+    font-weight: bold;
+    /* space between each label and box */
+    margin-bottom: 2%;
+}
+
+input {
+    /* full width */
+    width: 100%;
+    /* space for elements */
+    padding: 10px;
+    /* white border */
+    border: 1px solid #ccc;
+    /* curved border */
+    border-radius: 4px;
+    /* box size to ensure consistency  */
+    box-sizing: border-box;
+    /* top space */
+    margin-top: 5px;
+}
+
+button {
+    /* button colour */
+    background-color: navy;
+    /* text colour */
+    color: #fff;
+    /* button space */
+    padding: 10px;
+    /* no border */
+    border: none;
+    /* curved border */
+    border-radius: 4px;
+    /* changing pointer when hover over button */
+    cursor: pointer;
+    /* transition for background colour change */
+    transition: background .5s;
+    /* centered text */
+    text-align: center;
+}
+
+button:hover {
+    /* change button colour to green on hover */
+    background-color: green;
+}
+
+/* link colour */
+#about a:link, #contacts a:link{
+    /* no text decoration */
+    text-decoration: none;
+    /* blue colour for links */
+    color: blue;
+    /* bold font */
+    font-weight: bold; 
+}
+
+/* change colour of text when link is visited */
+#about a:visited, #contacts a:visited{
+    /* no text decoration */
+    text-decoration: none;
+    /* purple colour when visited already */
+    color: purple;
+}
+
+/* changing the colour of links on hover */
+#about a:hover, #contacts a:hover{
+    /* underline the text */
+    text-decoration: underline;
+    /* colour text red */
+    color: red;
+}
+
+table {
+    /* full given width for table */
+    width: 100%;
+    /* make border one line instead of multiple lines */
+    border-collapse: collapse;
+    /* space for table */
+    margin: 10px;
+    /* centered text */
+    text-align: center;
+}
+
+th, td {
+    /* white border */
+    border: 1px solid #ddd;
+    /* space for border elements */
+    padding: 7px;
+    /* centered text */
+    text-align: center;
+}
+
+th {
+    /* white background for headings for table */
+    background-color: #f2f2f2;
+}
+
+.centre{
+    /* centre the schedule table */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dateFilter {
+    /* centered text */
+    text-align: center;
+    /* top space */
+    margin-top: 20px;
+    /* bottom space */
+    margin-bottom: 20px;
+    /* half view width */
+    width: 50vw;
+}

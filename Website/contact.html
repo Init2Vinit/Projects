@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- linking css and js files -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <!-- favicon image for the tab -- used https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel = "icon" type = "favicon" href="Images/fav.png">
+</head>
+
+<body>
+    <header>
+        <div class = "container">
+            <!-- navigation to and from each page -->
+            <h1>TechCon 2023</h1>
+            <!-- using changePage function to change each HTML page without it refreshing the page each time -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" onclick="changePage('home')">Home</a></li>
+                    <li><a href="schedule.html" onclick="changePage('schedule')">Schedule</a></li>
+                    <li><a href ="speakers.html" onclick="changePage('speakers')">Speakers</a></li>
+                    <li><a href ="contact.html" onclick="changePage('contact')">Contact</a></li>                    
+                    <li><a href ="register.html" onclick="changePage('register')">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contacts">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <!-- details for contacting us -->
+            <!-- column used to get image and text besides each other -->
+            <div class = "column">
+                <img src="Images/sbb.jpg"> <!-- image reference https://associated-architects.co.uk/project/sir-bob-burgess-building/ -->
+                <address>
+                    You can contact us via our:
+                    <!-- email link -->
+                    <br><a href="mailto:vp195@student.le.ac.uk">Email</a><br>
+                    <!-- phone number -->
+                    <a href = "tel: +441162522522.">Phone: +44 (0)116 252 2522</a><br><br>
+
+                    <!-- visiting in person -->
+                    You may also visit us:<br><br>
+                    <a href = "https://maps.app.goo.gl/WtwpE8pmDjW7nMdBA" target="_blank">Sir Bob Burgess Building - Ground Floor Lecture Theatre 1</a> <!-- exact location provided using google maps -->
+                </address>
+            </div>
+            <!-- contact form title -->
+            <h3 style="text-align: center;">Or simply fill out the online form below:</h3>
+        </div>
+    </section>
+    
+    <div id = "formcontainer">
+        <form id="contactForm">
+            <!-- contact form -->
+            <h2>Contact Form</h2>
+            <!-- name -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div> 
+            <!-- email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- message they have for us -->
+            <div class = "form-group">
+                <label for="comment">Message:</label>
+                <input type="text" id="comment" name="comment" style= "height:150px" required>
+            </div>
+            <!-- submit button -->
+            <button type="button" onclick="submitForm2()">Submit</button>
+        </form>
+    </div>
+
+    <!-- footer used to match header with footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; TechCon 2023. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

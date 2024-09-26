@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers</title>
+    <!-- linking css and js files -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <!-- favicon image for the tab -- used https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel = "icon" type = "favicon" href="Images/fav.png">
+</head>
+
+<body>
+    <header>
+        <div class = "container">
+            <!-- navigation to and from each page -->
+            <h1>TechCon 2023</h1>
+            <!-- using changePage function to change each HTML page without it refreshing the page each time -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" onclick="changePage('home')">Home</a></li>
+                    <li><a href="schedule.html" onclick="changePage('schedule')">Schedule</a></li>
+                    <li><a href ="speakers.html" onclick="changePage('speakers')">Speakers</a></li>
+                    <li><a href ="contact.html" onclick="changePage('contact')">Contact</a></li>                    
+                    <li><a href ="register.html" onclick="changePage('register')">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="speakers">
+        <div class="container">
+            <!-- summary and intro to speakers -->
+            <h2>Featured Speakers</h2>
+            <p>
+                Our roster of speakers comprises visionaries, thought leaders, and seasoned experts who are at the forefront of technological innovation. 
+                <br><br>From pioneering entrepreneurs who have disrupted traditional paradigms to seasoned engineers pushing the boundaries of what's possible.
+                <br><br>Join us for an immersive experience as these luminaries share their insights, unveil cutting-edge solutions, and inspire the next wave of technological breakthroughs.
+            </p>
+            <!-- pictures were generated using AI so they are not real people -- https://thispersondoesnotexist.com/ -->
+            <div class="speaker">
+                <img src="Images/speaker1.jpg" alt="Speaker 1">
+                <!-- name -->
+                <h3>Selena Doe</h3>
+                <!-- position -->
+                <h5>CEO, MicroBo Inc.</h5>
+                <!-- bio -->
+                <p>
+                    The CEO of a robot company is a visionary leader with a strong background in robotics and artificial intelligence, fostering innovation, and driving strategic initiatives to position the company at the forefront of the rapidly evolving robotics industry.
+                </p>
+            </div>
+
+            <div class="speaker">
+                <img src="Images/speaker2.jpg" alt="Speaker 2">
+                <h3>Maya Patel</h3>
+                <h5>CTO, Cybeurity Co.</h5>
+                <p>
+                    The CTO of a cybersecurity enterprise with a deep understanding of evolving digital threats, to navigate the complex landscape of cybersecurity, safeguarding organizations with innovative solutions.
+                </p>
+            </div>
+
+            <div class="speaker">
+                <img src="Images/speaker3.jpg" alt="Speaker 3">
+                <h3>Dyke Huges</h3>
+                <h5>CEO, Un-Reality Ltd.</h5>
+                <p>
+                    The CEO of a virtual reality/augmented reality company is a visionary pioneer, steering the organisation through the immersive realms of innovation, creating transformative experiences that redefine the boundaries of reality.
+                </p>
+            </div>
+            
+            <div class="speaker">
+                <img src="Images/speaker4.jpg" alt="Speaker 4">
+                <h3>John Peter</h3>
+                <h5>CTO, ChainBlock Inc.</h5>
+                <p>
+                    The CTO in blockchain is a trailblazer orchestrating decentralised revolutions, leveraging distributed technology to redefine trust and transparency in the blockchain industry, and spearheading a paradigm shift towards a more secure and decentralised future.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer used to match header with footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; TechCon 2023. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <!-- linking css and js files -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <!-- favicon image for the tab -- used https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel = "icon" type = "favicon" href="Images/fav.png">
+</head>
+
+<body>
+    <header>
+        <div class = "container">
+            <!-- navigation to and from each page -->
+            <h1>TechCon 2023</h1>
+            <!-- using changePage function to change each HTML page without it refreshing the page each time -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" onclick="changePage('home')">Home</a></li>
+                    <li><a href="schedule.html" onclick="changePage('schedule')">Schedule</a></li>
+                    <li><a href ="speakers.html" onclick="changePage('speakers')">Speakers</a></li>
+                    <li><a href ="contact.html" onclick="changePage('contact')">Contact</a></li>                    
+                    <li><a href ="register.html" onclick="changePage('register')">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id = "schedule">
+        <div class = "container">
+            <h2>Event Schedule</h2>
+            <!-- text for summary of schedule before table -->
+            <p>
+                Welcome to our dynamic event schedule, meticulously crafted to immerse you in a whirlwind of tech innovation and knowledge! 
+                <br><br>Explore each day's agenda to discover a carefully curated lineup of keynote speakers, hands-on workshops, and engaging sessions designed to cater to every facet of the tech enthusiast in you. 
+                <br><br>From in-depth discussions on artificial intelligence and cybersecurity to practical insights into emerging trends like blockchain and virtual reality, our schedule promises a rich and diverse experience. 
+                <br><br>Whether you're a seasoned professional or a curious newcomer, there's something for everyone. 
+                <br><br>Let the countdown to an unforgettable tech journey begin!
+            </p>
+
+            <!-- filtering the table by data which the user can only select from 4th Dec to 8th Dec 2023 -- links to JS "filterByDate() function" -->
+            <label for="dateFilter">Filter by Date:</label>
+            <input type="date" id="dateFilter" min="2023-12-04" max="2023-12-07" onchange="filterByDate()">
+            <!-- creating a table with event details -->
+            <table id = "scheduleTable" class = "centre">
+                <thead>
+                    <!-- the titles of the table -->
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Location</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- the fields under the title for description of each events -->
+                    <!-- 4th Dec events -->
+                    <tr>
+                        <td>2023-12-04</td>
+                        <td>11:00 - 13:00</td>
+                        <td>Artificial Intelligence Talk</td>
+                        <td>Peter Williams Lecture Theatre</td>
+                        <td>All speaker share their opinion from their field, led by Selena Doe</td>
+                    </tr>
+                    <tr>
+                        <td>2023-12-04</td>
+                        <td>14:00 - 16:00</td>
+                        <td>Robotics Hands-On Tutorial</td>
+                        <td>Percy Gee 4.01</td>
+                        <td>Code your own robot!!</td>
+                    </tr>
+                    <tr>
+                        <td>2023-12-04</td>
+                        <td>16:00 - 17:00</td>
+                        <td>Networking Session</td>
+                        <td>Percy Gee Building</td>
+                        <td>Talk to the experts and grow your network</td>
+                    </tr>
+                    <!-- 5th Dec events -->
+                    <tr>
+                        <td>2023-12-05</td>
+                        <td>11:00 - 13:00</td>
+                        <td>Interactive Cyber Security Talk</td>
+                        <td>Peter Williams Lecture Theatre</td>
+                        <td>Speakers collaborate to share the security risks and mitigation techniques, led by Maya Patel</td>
+                    </tr>
+                    <tr>
+                        <td>2023-12-05</td>
+                        <td>14:00 - 16:00</td>
+                        <td>Hackathon</td>
+                        <td>Percy Gee 4.01</td>
+                        <td>Take part in competitive coding against the room and solve problems before them</td>
+                    </tr>
+                    <tr>
+                        <td>2023-12-05</td>
+                        <td>16:00 - 17:00</td>
+                        <td>Networking Session</td>
+                        <td>Percy Gee Building</td>
+                        <td>Talk to the experts and grow your network</td>
+                    </tr>
+                    <!-- 6th Dec events -->
+                    <tr>
+                        <td>2023-12-06</td>
+                        <td>11:00 - 13:00</td>
+                        <td>Virtual Reality Talk</td>
+                        <td>Peter Williams Lecture Theatre</td>
+                        <td>Interactive VR talk led by Dyke Huges educating in his own way!</td>
+                    </tr>
+                    <tr>
+                        <td>2023-12-06</td>
+                        <td>14:00 - 16:00</td>
+                        <td>VR/AR experience</td>
+                        <td>Bob Burgess 0.01</td>
+                        <td>Dive into your own world and experience media like never before!!</td>
+                    </tr>
+                    <tr>
+                        <td>2023-12-06</td>
+                        <td>16:00 - 18:00</td>
+                        <td>Networking Session</td>
+                        <td>Bob Burgess Building</td>
+                        <td>Talk to the experts and grow your network</td>
+                    </tr>
+                    <!-- 7th Dec events -->
+                    <tr>
+                        <td>2023-12-07</td>
+                        <td>11:00 - 13:00</td>
+                        <td>Blocks and Chains Talk</td>
+                        <td>Peter Williams Lecture Theatre</td>
+                        <td>Deep analysis into Blockchain technology, led by John Peter</td>
+                    </tr>
+                    <tr>
+                        <td>2023-12-07</td>
+                        <td>14:00 - 16:00</td>
+                        <td>Crypto Debate</td>
+                        <td>Bob Burgess 0.01</td>
+                        <td>Form your team, discuss crypto and debate your viewpoints against all others</td>
+                    </tr>
+                    <tr>
+                        <td>2023-12-07</td>
+                        <td>16:00 - 18:00</td>
+                        <td>Networking Session</td>
+                        <td>Bob Burgess Building</td>
+                        <td>Talk to the experts and grow your network</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <!-- footer used to match header with footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; TechCon 2023. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

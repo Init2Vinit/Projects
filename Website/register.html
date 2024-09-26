@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- linking css and js files -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <!-- favicon image for the tab -- used https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel = "icon" type = "favicon" href="Images/fav.png">
+</head>
+
+<body>
+    <header>
+        <div class = "container">
+            <!-- navigation to and from each page -->
+            <h1>TechCon 2023</h1>
+            <!-- using changePage function to change each HTML page without it refreshing the page each time -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" onclick="changePage('home')">Home</a></li>
+                    <li><a href="schedule.html" onclick="changePage('schedule')">Schedule</a></li>
+                    <li><a href ="speakers.html" onclick="changePage('speakers')">Speakers</a></li>
+                    <li><a href ="contact.html" onclick="changePage('contact')">Contact</a></li>                    
+                    <li><a href ="register.html" onclick="changePage('register')">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id = "registration">
+        <div id = "container">
+            <!-- text above the registration form to encourage registration -->
+            <h2>Register Now!!</h2>
+            <p>Secure your spot at our upcoming TechCon 2023 event by completing the registration process below. 
+                <br><br>Don't miss out on the chance to connect with industry leaders, expand your skill set, and position yourself at the forefront of technological advancements.
+                <br><br>Register now and embark on a journey of discovery, learning, and endless possibilities! 
+                <br><br>Simply fill in the required information, and you'll be on your way to unlocking a transformative experience to propel your career and be part of the future of technology.
+            </p>
+        </div>
+    </section>
+
+    <!-- registration form -->
+    <div id = "formcontainer">
+        <form id="registrationForm">
+            <h2>Registration Form</h2>
+            <!-- getting name -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <!-- getting email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- getting password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <!-- getting them to confirm their password -->
+            <div class="form-group">
+                <label for="confPass">Confirm Password:</label>
+                <input type="password" id="confPass" name="confPass" required>
+            </div>
+            <!-- submit button to submit form which links to JS function "submitForm()" -->
+            <button type="button" onclick="submitForm()">Register</button>
+        </form>
+    </div>
+    
+    <!-- footer used to match header with footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; TechCon 2023. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
