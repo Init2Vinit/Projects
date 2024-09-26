@@ -1,0 +1,378 @@
+  /* Fixed sidenav, full height */
+  .sidenav {
+    height: 100%;
+    width: 210px;
+    max-width:100%;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: #039;
+    border-width: 3px; border-style: solid;
+    background-size:cover;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    max-width:100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color:red;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  /*paragraphs*/
+  p{
+    margin-left:220px;
+    font-size:17;
+  }
+  
+  
+  iframe{
+    margin-left:400px;
+    width:50%;
+    height:50%;
+  }
+  
+  ul{
+    margin-left:210px;
+    font-size:large;
+  }
+  
+  form{
+    text-align: center;
+  }
+  
+  h1{
+    font-family: Verdana; 
+    font-size: 20; 
+    color: #AAAAAA; 
+    background-color: #000000;
+    border-left-color: transparent;  
+    border-width: 3px; border-style: solid; 
+    border-color: #039;
+    width: 100%;
+    max-width:100%; 
+    height: 30px; 
+    text-decoration:underline;
+    position:relative;
+    text-align: center;
+  }
+  
+  h4{
+    margin-left:220px;
+    font-size:20px;
+  }
+  
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing:border-box;
+  }
+  
+  .bg-image {
+    /* Full height */
+    height: 100%;
+    position:relative;
+    background-size:cover;
+    max-width:100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size:contain;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url("Images/tech.webp"); }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 650px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .bg-text2 {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    border: 10px solid #f1f1f1;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 650px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 100%; /* Maximum width */
+    margin-left: 210; /* Center it */
+  }
+  
+  .container .content {
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    height:auto;
+    padding: 30px; /* Some padding */
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column1 {
+    margin-left:210px;
+    float: left;
+    width: 40%;
+    padding: 10px;
+    background: linear-gradient(#c4e0e5,#4ca1af);
+    text-align: center;
+    border-right-color: black;
+  }
+  .column2{
+    float: right;
+    width: 40%;
+    padding: 10px;
+    background: linear-gradient(#c4e0e5,#4ca1af);
+    text-align:center;
+  }
+  
+  .column3 {
+    margin-left:210px;
+    float: left;
+    width: 40%;
+    padding: 10px;
+    background: linear-gradient(red,orange,yellow,chartreuse,deepskyblue,#BF40BF,#A28BE7);
+    text-align: center;
+  }
+  .column4{
+    float: right;
+    width: 40%;
+    padding: 10px;
+    background: linear-gradient(red,orange,yellow,chartreuse,deepskyblue,#BF40BF,#A28BE7);
+    font-size:22px;
+    text-align: center;
+  }
+  
+  .column5 {
+    margin-left:210px;
+    float: left;
+    width: 40%;
+    padding: 10px;
+    background: linear-gradient(#a8ff78,#78ffd6);
+    text-align: center;
+  }
+  .column6{
+    float: right;
+    width: 41.25%;
+    padding: 10px;
+    background: linear-gradient(#a8ff78,#78ffd6);
+    text-align: center;
+  }
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  * {box-sizing: border-box}
+  
+  /* Container needed to position the overlay. Adjust the width as needed */
+  .container2 {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin-left:220px;
+  }
+  
+  /* Make the image to responsive */
+  .image {
+    display: block;
+    flex-basis:40%;
+    margin-left:200px;
+    background-size:cover;
+    max-width:100%;
+    height:auto;
+  }
+  
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .75s ease;
+    opacity:0;
+    color: white;
+    font-size: 17px;
+    padding: 15px;
+    text-align: center;
+    margin-left:70px;
+  }
+  
+  /* When you mouse over the container, fade in the overlay title */
+  .container2:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+  .column {
+    float: left;
+    padding-right: 20px;
+    width:100%
+  }
+  
+  /* Clear floats after image containers */
+  .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-img {
+    /* The image used */
+    background-image: url("Images/humantech.jpeg");
+  
+    /* Control the height of the image */
+    min-height: 550px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Add styles to the form container */
+  .container3 {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+    input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color:deepskyblue;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .reveal{
+    position:relative;
+    background-color: transparent;
+    transform: translateX(-20px);
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 2.5s ease;
+  }
+  .reveal.active{
+    color:#000000;
+    transform: translateX(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
