@@ -26,12 +26,3 @@ To build an end-to-end analytics pipeline that identifies high-performing and un
 * `ingestion_db.py`: Python script for database data ingestion.
 * `get_vendor_summary.py`: Python script to process and summarise vendor sales data.
 * `vendor_sales_summary.csv`: The primary dataset used for analysis.
-  
-## 🚀 How to Run
-
-1.  Clone this repository.
-2.  Ensure you have Python installed.
-3.  Install dependencies (if you create a `requirements.txt`): `pip install -r requirements.txt`
-4.  Run `ingestion_db.py` to simulate data loading (or connect to your actual database if applicable).
-5.  Execute notebooks sequentially: `Exploratory Data Analysis.ipynb`, then `Vendor Performance Analysis.ipynb`.
-6.  Run `get_vendor_summary.py` to generate specific reports.
