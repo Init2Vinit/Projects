@@ -26,8 +26,7 @@ To build an end-to-end analytics pipeline that identifies high-performing and un
 * `ingestion_db.py`: Python script for database data ingestion.
 * `get_vendor_summary.py`: Python script to process and summarise vendor sales data.
 * `vendor_sales_summary.csv`: The primary dataset used for analysis.
-* `database.ipynb`: Database ingestion script
-
+  
 ## 🚀 How to Run
 
 1.  Clone this repository.
