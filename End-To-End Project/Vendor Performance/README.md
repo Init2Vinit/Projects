@@ -1,6 +1,6 @@
 # Vendor Performance Analysis: End-to-End Project
 
-This project delivers a comprehensive data solution for optimizing vendor relationships by providing actionable insights into their performance.
+This project delivers a comprehensive data solution for optimising vendor relationships by providing actionable insights into their performance.
 
 ## 🎯 Project Goal
 
@@ -15,16 +15,16 @@ To build an end-to-end analytics pipeline that identifies high-performing and un
 
 ## 🛠️ Technologies Used
 
-* **Python:** Pandas, NumPy, Matplotlib, Seaborn, `sqlite3` (or similar for DB interaction)
+* **Python:** Pandas, NumPy, Matplotlib, Seaborn, `sqlite3`
 * **Jupyter Notebooks:** For detailed analysis and documentation.
-* **SQL (Conceptual):** Demonstrated through database ingestion.
+* **SQL:** Demonstrated through database ingestion.
 
 ## 📂 Project Files
 
-* `Exploratory Data Analysis.ipynb`: Initial data understanding and visualization.
+* `Exploratory Data Analysis.ipynb`: Initial data understanding and visualisation.
 * `Vendor Performance Analysis.ipynb`: Core analysis, KPI calculation, and insights generation.
 * `ingestion_db.py`: Python script for database data ingestion.
-* `get_vendor_summary.py`: Python script to process and summarize vendor sales data.
+* `get_vendor_summary.py`: Python script to process and summarise vendor sales data.
 * `vendor_sales_summary.csv`: The primary dataset used for analysis.
 * `Untitled-1.ipynb`: (Please rename this to reflect its content, e.g., `Data Preprocessing.ipynb`)
 
@@ -36,7 +36,3 @@ To build an end-to-end analytics pipeline that identifies high-performing and un
 4.  Run `ingestion_db.py` to simulate data loading (or connect to your actual database if applicable).
 5.  Execute notebooks sequentially: `Exploratory Data Analysis.ipynb`, then `Vendor Performance Analysis.ipynb`.
 6.  Run `get_vendor_summary.py` to generate specific reports.
-
-## 🔗 Connect
-
-[Your LinkedIn Profile URL] | [Your GitHub Profile URL] | [Your Email Address]
