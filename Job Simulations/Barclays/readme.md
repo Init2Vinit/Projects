@@ -1,0 +1,1 @@
+![Volume of incidents across different locations](image.png)
